@@ -15,6 +15,7 @@ body {
   justify-content: center;
   align-items: flex-start;
   row-gap: 10%;
+  width: 80%;
 }
 
 .mailChimpImg {
@@ -30,11 +31,20 @@ body {
 .form {
   margin: 0;
   width: 40%;
+  height: 1000px;
+}
+
+.formForm {
+  height: 100%;
+  width: auto;
 }
 
 .formLabels {
   display: flex;
   flex-flow: column wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  row-gap: 10px;
 }
 
 .requirementsList {
@@ -42,11 +52,14 @@ body {
   flex-flow: row wrap;
   justify-content: flex-start;
   align-items: center;
-  max-height: 5em;
+  height: 100px;
 }
 
 .requirementsListUl {
+  height: 100px;
   width: 100%;
+  row-gap: 5%px;
+  column-gap: 5%;
   display: flex;
   flex-flow: column wrap;
   justify-content: flex-start;
@@ -58,14 +71,30 @@ body {
   flex-flow: column wrap;
   justify-content: flex-start;
   align-items: flex-start;
-  height: 5em;
+  height: 40px;
   width: auto;
 }
 
 .signUp {
+  height: 50px;
+  width: auto;
   display: flex;
   flex-flow: row;
   justify-content: flex-start;
   align-items: center;
+  margin: 5% 0 5% 0;
 }
 
+.formLabels ~ label,input {
+  width: 100%;
+  height: auto;
+}
+
+.buttonSignUp {
+  padding: 5%;
+  font-size: 20px;
+}
+
+.signUp input[type="checkbox"] {
+  transform: scale(1.5);
+}
