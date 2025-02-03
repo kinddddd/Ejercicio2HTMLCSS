@@ -14,14 +14,16 @@
         <div class="form">
             <h1>Welcome to Mailchimp</h1>
             <p>Find your people. Engage your customers. Build your brand. Do it all with Mailchimp's Marketing Platform. Already have an account? <a href="https://google.es">Log in</a></p>
-            <form action="/nextPage.html" method="post" class="formForm">
+            <form action="" method="post" class="formForm">
                 <fieldset class="formLabels">
                     <label for="email">Email</label>
                     <input type="email" name="email" id="email" required >
                     <label for="username">Username</label>
-                    <input type="text" name="username" id="username">
+                    <input type="text" name="username" id="username" required maxlength="10">
                     <label for="password">Password</label>
-                    <input type="password" name="password" id="password">
+                    <input type="password" name="password" id="password" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[!@#$%^&*(),.?':{}|<>]).{8,}$" 
+                    title="La contraseña debe tener al menos 8 caracteres, una letra minúscula, una mayúscula, un número y un carácter especial." 
+                    required>
                     <div class="requirementsList">
                         <ul class="requirementsListUl">
                             <li class="requirementsListLi">
